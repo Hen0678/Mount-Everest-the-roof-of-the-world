@@ -5,17 +5,28 @@
     box-sizing: border-box;
 }
 
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+/* General styles */
+    color: black;
+
+}
+
 /* Header */
 header {
-    background-color: grey;
+    background-color: rgb(96, 46, 46);
 }
 
 /* Main */
 main {
-    background-color: blueviolet;
+    background-color: whitesmoke;
+    flex: 1 0 auto;
 }
 
 /* footer */
 footer {
-    background-color: brown;
+    background-color: rgb(96, 46, 46);
 }
