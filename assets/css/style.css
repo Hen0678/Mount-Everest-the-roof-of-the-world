@@ -45,6 +45,20 @@ h1 {
     color: #f8fcfb;
 }
 
+#navitems {
+    font-size:105%;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+#navitems > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #d3d6db;
+}
+
 /* Main */
 main {
     background-color: aqua;
