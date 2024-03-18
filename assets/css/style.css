@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 /* General styles */
-    color: #d3d6db; 
+    color: whitesmoke 
     font-family: 'Nokora', sans-serif;
 
 }
@@ -29,7 +29,7 @@ header {
     box-shadow: 0 1px 1px gray;
     display: flex;
     justify-content: space-between;
-    align-items: last baseline;
+    align-items: baseline;
 
 }
 
@@ -69,9 +69,10 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 1px 1px gray;
+    box-shadow: 0 2px 2px gray;
 /* This will remove the nav items from the display */
     display: none;
+/* This means it will start at the bottom of its parent */    
     top: 100%;
 }
 
@@ -91,8 +92,9 @@ nav {
 
 /* Main */
 main {
-    background-color: aqua;
+    background-color: whitesmoke;
     flex: 1 0 auto;
+    margin-top: 171px;
 }
 
 /* footer */
