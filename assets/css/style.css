@@ -1,5 +1,5 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap');
 
 /* Wildcard selector to override default styles */
 * {
@@ -15,12 +15,17 @@ body {
     flex-direction: column;
 /* General styles */
     color: black;
+    font-family: 'Nokora', sans-serif;
 
 }
 
 /* Header */
 header {
-    background-color: rgb(96, 46, 46);
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Nokora', sans-serif;
 }
 
 /* Main */
