@@ -105,6 +105,13 @@ footer {
 /* Media queries for screen sizes 768px+ */
 @media screen and (min-width: 768px) {
 /* Should display the nav items */
+
+    main {
+        background-color: whitesmoke;
+        flex: 1 0 auto;
+        margin-top: 51px;
+    }       
+
     nav { 
         display: block;
         position: relative;
