@@ -94,10 +94,34 @@ nav {
 main {
     background-color: whitesmoke;
     flex: 1 0 auto;
-    margin-top: 171px;
+    margin-top: 85px;
 }
 
 /* footer */
 footer {
     background-color: rgb(96, 46, 46);
 }
+
+/* Media queries for screen sizes 768px+ */
+@media screen and (min-width: 768px) {
+/* Should display the nav items */
+    nav { 
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #navitems {
+        display: flex;
+    }
+    #navitems > li {
+        padding-left: 1rem;
+    }
+    .toggle-label {
+        display: none;
+    }
+
+}
+    
