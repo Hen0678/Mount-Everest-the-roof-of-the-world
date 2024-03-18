@@ -14,14 +14,14 @@ body {
     display: flex;
     flex-direction: column;
 /* General styles */
-    color: black;
+    color: #d3d6db; 
     font-family: 'Nokora', sans-serif;
 
 }
 
 /* Header */
 header {
-    background-color: whitesmoke;
+    background-color: #659dbd;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -30,8 +30,19 @@ header {
 
 }
 
+/* This creates a rule for any a tag which is a decendent of the header */
+header a {
+    text-decoration: none;
+    color:  inherit;    
+    letter-spacing: 3px;
+
+}
+
 h1 {
     font-family: 'Nokora', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f8fcfb;
 }
 
 /* Main */
