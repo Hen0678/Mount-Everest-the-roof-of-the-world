@@ -1,128 +1,104 @@
-/* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Wildcard selector to override default styles */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-/* General styles */
-    color: whitesmoke 
-    font-family: 'Nokora', sans-serif;
-
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #659dbd;
+    background-color: black;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 1px 1px gray;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-
 }
 
-/* This creates a rule for any a tag which is a decendent of the header */
 header a {
     text-decoration: none;
-    color: inherit;    
-    letter-spacing: 3px;
-
+    color: white;
 }
 
 h1 {
-    font-family: 'Nokora', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #f8fcfb;
+    letter-spacing: 2px;
+    color: white;
 }
 
-#navitems {
-    font-size:105%;
-    letter-spacing: 1px;
-    list-style: none;
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-#navitems > li {
+#menu > li {
     margin-bottom: 1em;
 }
 
 .active {
-    border-bottom: 1px solid #d3d6db;
+    border-bottom: 1px solid #3a3a3a;
 }
 
-/* Creating toggle on the nav bar */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #659dbd;
+    background-color: black;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px gray;
-/* This will remove the nav items from the display */
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-/* This means it will start at the bottom of its parent */    
     top: 100%;
 }
 
-/* Toggle for nav items */
-#toggle:checked~nav {
+/* Nav toggle */
+#nav-toggle:checked~nav {
     display: block;
-} 
+}
 
-#toggle {
+#nav-toggle {
     display: none;
 }
 
-/* Changes the height of the toggle */
-.toggle-label {
+.nav-toggle-label {
     font-size: 2rem;
 }
 
-/* Main */
+/* Main content */
 main {
-    background-color: whitesmoke;
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 85px;
+    margin-top: 47px;
 }
 
-/* footer */
+/* Footer */
 footer {
-    background-color: rgb(96, 46, 46);
+    background-color: orange;
 }
 
-/* Media queries for sizes 281px - 767px */
-@media screen and (min-width: 281px) {
-
-    main { 
-        background-color: whitesmoke;
-        flex: 1 0 auto;
-        margin-top: 42px;      
-    }
-}
-
-/* Media queries for screen sizes 768px+ */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-/* Should display the nav items */
-
-    main {
-        background-color: whitesmoke;
-        flex: 1 0 auto;
-        margin-top: 52px;
-    }       
-
-    nav { 
+    /* Header */
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -130,15 +106,34 @@ footer {
         padding-right: 1rem;
     }
 
-    #navitems {
+    #menu {
         display: flex;
     }
-    #navitems > li {
+
+    #menu > li {
         padding-left: 1rem;
     }
-    .toggle-label {
+
+    .nav-toggle-label {
         display: none;
     }
 
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
 }
-    
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
