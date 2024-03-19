@@ -94,7 +94,7 @@ nav {
 main {
     background-color: whitesmoke;
     flex: 1 0 auto;
-    margin-top: 42px;
+    margin-top: 85px;
 }
 
 /* footer */
@@ -102,14 +102,15 @@ footer {
     background-color: rgb(96, 46, 46);
 }
 
+/* Media queries for sizes 281px - 767px */
+@media screen and (min-width: 281px) {
 
-@media screen and (max-width: 280px) {
-    main {
+    main { 
         background-color: whitesmoke;
         flex: 1 0 auto;
-        margin-top: px;  
+        margin-top: 42px;      
     }
-}    
+}
 
 /* Media queries for screen sizes 768px+ */
 @media screen and (min-width: 768px) {
@@ -118,7 +119,7 @@ footer {
     main {
         background-color: whitesmoke;
         flex: 1 0 auto;
-        margin-top: 51px;
+        margin-top: 52px;
     }       
 
     nav { 
