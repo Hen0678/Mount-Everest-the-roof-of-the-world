@@ -94,13 +94,22 @@ nav {
 main {
     background-color: whitesmoke;
     flex: 1 0 auto;
-    margin-top: 85px;
+    margin-top: 42px;
 }
 
 /* footer */
 footer {
     background-color: rgb(96, 46, 46);
 }
+
+
+@media screen and (max-width: 280px) {
+    main {
+        background-color: whitesmoke;
+        flex: 1 0 auto;
+        margin-top: px;  
+    }
+}    
 
 /* Media queries for screen sizes 768px+ */
 @media screen and (min-width: 768px) {
